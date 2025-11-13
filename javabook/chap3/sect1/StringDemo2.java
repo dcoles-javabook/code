@@ -1,0 +1,23 @@
+package javabook.chap3.sect1;
+
+/**
+ * Demonstrates several methods of the String class and method chaining.
+ *
+ * @author Drue Coles
+ */
+public class StringDemo2 {
+
+   public static void main(String[] args) {
+        String s1 = "capybara";
+        System.out.println(s1);
+        System.out.println(s1.replace('a', 'o'));
+
+        // swap halves
+        int n = s1.length();
+        String left = s1.substring(0, n / 2);
+        String right = s1.substring(n / 2);
+        System.out.println(right + left);
+
+        System.out.println(s1.replaceAll("pyba", "").repeat(2));
+    }
+}
