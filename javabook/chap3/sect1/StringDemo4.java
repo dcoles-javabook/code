@@ -1,7 +1,7 @@
 package javabook.chap3.sect1;
 
 /**
- * Demonstrates escape sequences and Unicode.
+ * Demonstrates escape sequences and Unicode characters.
  *
  * @author Drue Coles
  */
