@@ -1,11 +1,11 @@
 package javabook.chap3.sect1;
 
 /**
- * Demonstrates several methods of the String class and method chaining.
+ * Demonstrates instance methods of the String class and method chaining.
  *
  * @author Drue Coles
  */
-public class StringDemo2 {
+public class InstanceMethodDemo {
 
    public static void main(String[] args) {
         String s1 = "capybara";
