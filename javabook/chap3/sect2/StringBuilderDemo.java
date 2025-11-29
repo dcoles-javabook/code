@@ -1,7 +1,7 @@
 package javabook.chap3.sect2;
 
 /**
- * Demonstrates how to use StringBuilders for mutable character sequences.
+ * Demonstrates the use of StringBuilders for mutable character sequences.
  *
  * @author Drue Coles
  */
