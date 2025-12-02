@@ -18,6 +18,6 @@ public class PowerCalculator {
 
       // format and display result as an equation
       int result = (int) Math.pow(base, exponent);
-      System.out.printf("%d^%d = %d%n", base, exponent, result);
+      System.out.printf("%d^%d = %,d %n", base, exponent, result);
    }
 }
