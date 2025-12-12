@@ -27,12 +27,9 @@ public class DaysAlive {
       DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy");
       System.out.printf("Today is %s.%n", today.format(formatter));
 
-      // calculate period since birth
+      // output current age
       Period period = Period.between(birthday, today);
-      int years = period.getYears();
-      int months = period.getMonths();
-      int days = period.getDays();
-      System.out.printf("You are %d years, %d months, and %d days old.%n", years, months, days);
+      System.out.printf("You are %d years old.%n", period.getYears());
 
       // calculate total number of days since birth
       long daysAlive = ChronoUnit.DAYS.between(birthday, today);
