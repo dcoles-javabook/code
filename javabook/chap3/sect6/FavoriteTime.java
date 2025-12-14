@@ -19,23 +19,24 @@ public class FavoriteTime {
         String input = scanner.next();
 
         // parse user input
-        LocalTime futureTime = LocalTime.parse(input);
+        LocalTime futureTime = LocalTime.parse(input); // assumes two-digit hour such as 05
         LocalTime now = LocalTime.now();
-
-        // compute forward interval
-        int secondsInDay = 24 * 60 * 60;
-        int nowSecs = now.toSecondOfDay();
-        int futureSecs = futureTime.toSecondOfDay();
-        int deltaSeconds = Math.floorMod(futureSecs - nowSecs, secondsInDay); // for wrap-around
-        Duration duration = Duration.ofSeconds(deltaSeconds);
 
         // display current and future times in hh:mm:ss (24-hour format)
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         System.out.printf("%13s %s%n", "Current time:", now.format(formatter));
         System.out.printf("%13s %s%n", "Future time:", futureTime.format(formatter));
 
+        // compute number of seconds until future time
+        int secondsInDay = 24 * 60 * 60;
+        int nowSecs = now.toSecondOfDay();
+        int futureSecs = futureTime.toSecondOfDay();
+        int waitingSeconds = Math.floorMod(futureSecs - nowSecs, secondsInDay); 
+
+        Duration waitingTime = Duration.ofSeconds(waitingSeconds);
+
         // display waiting time in HH:MM:SS format
-        long totalSeconds = duration.getSeconds();
+        long totalSeconds = waitingTime.getSeconds();
         long hours = totalSeconds / 3600;
         long minutes = (totalSeconds % 3600) / 60;
         long seconds = totalSeconds % 60;
