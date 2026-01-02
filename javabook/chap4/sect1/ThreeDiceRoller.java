@@ -1,4 +1,4 @@
-package edu.commonwealthu.chap4.sect1;
+package javabook.chap4.sect1;
 
 import java.util.concurrent.ThreadLocalRandom;
 
