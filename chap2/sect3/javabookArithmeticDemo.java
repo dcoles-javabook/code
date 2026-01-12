@@ -1,4 +1,4 @@
-package javabook.chap2.sect3;
+package chap2.sect3;
 
 public class ArithmeticDemo {
 
