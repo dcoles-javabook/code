@@ -1,4 +1,4 @@
-package javabook.chap3.sect2;
+package chap3.sect2;
 
 /**
  * Demonstrates the use of StringBuilders for mutable character sequences.
