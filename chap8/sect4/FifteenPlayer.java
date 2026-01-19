@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author Drue Coles
  */
-public class ConsoleFifteenGame {
+public class FifteenPlayer {
 
    public static void main(String[] args) {
       System.out.println("""
