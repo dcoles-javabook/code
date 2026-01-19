@@ -50,7 +50,7 @@ public class RandomOvals extends Application {
    }
    
    /**
-    * Creates and returns a random color.
+    * Creates and returns a color with a random RGB components.
     */
    private static Color randomColor() {
       ThreadLocalRandom rand = ThreadLocalRandom.current();
@@ -59,7 +59,7 @@ public class RandomOvals extends Application {
       double b = rand.nextDouble();
 
       // brightened for contrast with black background
-      return new Color(r, g, b, 1).brighter().brighter();
+      return Color.color(r, g, b).brighter().brighter();
    }   
 
    public static void main(String[] args) {
