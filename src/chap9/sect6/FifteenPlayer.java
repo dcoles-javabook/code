@@ -1,5 +1,6 @@
 package chap9.sect6;
 
+import chap8.sect4.FifteenGame;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

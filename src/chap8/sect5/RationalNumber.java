@@ -1,4 +1,4 @@
-package chap9.sect3;
+package chap8.sect5;
 
 /**
  * An immutable rational number.
@@ -9,7 +9,7 @@ package chap9.sect3;
  *
  * @author Drue Coles
  */
-public class RationalNumber implements Comparable<RationalNumber> {
+public class RationalNumber {
 
    public static final RationalNumber ZERO = new RationalNumber(0);
    public static final RationalNumber ONE = new RationalNumber(1);
@@ -24,7 +24,7 @@ public class RationalNumber implements Comparable<RationalNumber> {
     * Constructs a rational number with a specified numerator and denominator. Assumes that the
     * denominator is non-zero; behavior is undefined if this precondition is violated.
     *
-    * @param numerator   an arbitrary integer
+    * @param numerator an arbitrary integer
     * @param denominator a non-zero integer
     */
    public RationalNumber(int numerator, int denominator) {
@@ -150,16 +150,5 @@ public class RationalNumber implements Comparable<RationalNumber> {
    @Override
    public int hashCode() {
       return 89 * numerator + denominator;
-   }
-
-   /**
-    * Returns a negative number, zero, or a positive number depending on whether this rational
-    * number is less than, equal to, or greater than another.
-    */
-   @Override
-   public int compareTo(RationalNumber t) {
-      int a = numerator * t.denominator;
-      int b = denominator * t.numerator;
-      return Integer.compare(a, b);
    }
 }

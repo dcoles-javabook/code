@@ -42,7 +42,7 @@ public class NetworkUser implements SimpleComparable {
 
    /**
     * Returns a negative integer, zero, or a positive integer depending on whether this login name
-    * is less than, equal to, or greater another in ASCII order.
+    * is less than, equal to, or greater than another in ASCII order.
     */
    @Override
    public int compareTo(Object o) {

@@ -1,4 +1,4 @@
-package chap9.sect6;
+package chap8.sect4;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -19,15 +19,18 @@ public class FifteenGame {
    private final int[][] grid;
 
    /**
-    * Initializes the game to a random solvable configuration.
+    * Initializes the game to a solvable configuration by performing a default number of random tile
+    * moves starting from the winning configuration.
     */
    public FifteenGame() {
       this(DEFAULT_SHUFFLE_COUNT);
    }
 
    /**
-    * Initializes the game to a random configuration that can be
-    * solved within a specified number of moves.
+    * Initializes the game to a solvable configuration by performing a given number of random tile
+    * moves starting from the winning configuration.
+    *
+    * @param n the number of random moves to apply
     */
    public FifteenGame(int n) {
       grid = new int[ROWS][COLS];
@@ -94,7 +97,7 @@ public class FifteenGame {
          }
       }
 
-      // move is valid if the rows are the same and the columns differ by one, or vice versa
+      // move is valid if rows are the same and columns differ by one, or vice versa
       int rowDiff = Math.abs(tileRow - spaceRow);
       int colDiff = Math.abs(tileCol - spaceCol);
       if (rowDiff + colDiff == 1) {

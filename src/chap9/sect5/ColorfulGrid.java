@@ -44,9 +44,9 @@ import static javafx.scene.paint.Color.YELLOW;
 public class ColorfulGrid extends Application {
 
     private static final Color[] colors = {
-            AQUAMARINE, DARKSLATEGRAY, DEEPPINK, DODGERBLUE, GOLD, GREEN, GREENYELLOW, INDIGO, LIME,
-            MAGENTA, NAVY, ORANGE, PLUM, POWDERBLUE, PURPLE, STEELBLUE, TEAL, THISTLE, TOMATO,
-            TURQUOISE, YELLOW
+        AQUAMARINE, DARKSLATEGRAY, DEEPPINK, DODGERBLUE, GOLD, GREEN, GREENYELLOW, INDIGO, LIME,
+        MAGENTA, NAVY, ORANGE, PLUM, POWDERBLUE, PURPLE, STEELBLUE, TEAL, THISTLE, TOMATO,
+        TURQUOISE, YELLOW
     };
 
     @Override
