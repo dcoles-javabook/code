@@ -13,7 +13,7 @@ public class CupOfDice {
    private final int sides;
 
    /**
-    * Creates a cup of dice with random initial values.
+    * Constructs a cup of dice with random initial values.
     */
    public CupOfDice(int numDice, int sides) {
       this.dice = new int[numDice];
@@ -22,7 +22,7 @@ public class CupOfDice {
    }
 
    /**
-    * Creates a cup of 6-sided dice with random initial values.
+    * Constructs a cup of 6-sided dice with random initial values.
     */
    public CupOfDice(int numDice) {
       this(numDice, 6);
